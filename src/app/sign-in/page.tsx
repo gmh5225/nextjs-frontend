@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
-import { SignIn } from './SignIn'
+import { Auth } from './Auth'
 
 export const metadata: Metadata = {
 	title: 'Авторизация'
 }
 
-export default function SignInPage() {
-	return <SignIn />
+export default function AuthPage() {
+	return <Auth />
 }

@@ -1,0 +1,39 @@
+.background {
+	@apply relative h-[100vh] w-full bg-cover bg-fixed bg-center bg-no-repeat;
+
+	> .wrapper {
+		@apply flex h-full w-full items-center justify-center bg-black/50;
+
+		> .card {
+			@apply flex w-full max-w-sm flex-col items-start justify-center border-none p-7 shadow-lg;
+
+			> .header {
+				@apply space-y-1 p-0;
+
+				> h3 {
+					@apply text-xl;
+				}
+			}
+
+			> .content {
+				@apply my-4 w-full space-y-3 p-0;
+
+				> .button {
+					@apply flex w-full items-center justify-start;
+
+					> .icon {
+						@apply size-5;
+					}
+
+					> .text {
+						@apply flex-1 text-center;
+					}
+				}
+			}
+
+			> .footer {
+				@apply block p-0 text-xs text-muted-foreground;
+			}
+		}
+	}
+}
